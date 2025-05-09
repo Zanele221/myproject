@@ -43,7 +43,11 @@
         a:hover{
             text-decoration: underline;
         }
- 
+        
+        #explore{
+            font-size: 20px;
+            font-weight: 20px;
+        }
     
    
     </style>
@@ -67,9 +71,11 @@
         speak to different souls.
    
         <br />
-        Now that you have a little background on guitars let us begin your journey towards learning
-        basics in playing a guitar.
-    </p>
+        </p> 
+       <div id="explore">
+       <p> <span style="background-color: #596e79;">Now that you have a little background on guitars let us begin your journey towards learning
+        basics in playing a guitar.</span></p>
+       </div>
    
 
     <button>Start learning</button>
@@ -77,16 +83,16 @@
      <a href="http://127.0.0.1:5500/contact.html">Contact Me</a>
 
      <script>
-        let messageDisplay = document.getElementById("messageDisplay")
+       
         function startBasics(){
         let name = prompt ("What is your name?")
         let userAnswer = prompt ("Are you intrested to learn basics in playing a guitar?")
 
        
-
-        if (userAnswer == "Yes"){
+        userAnswer = userAnswer.toLowerCase();
+        if (userAnswer == "yes"){
             alert ("Great "+name + " We are excited to help you learn")
-        } else if (userAnswer =="No"){
+        } else if (userAnswer =="no"){
             alert("No worries we will be there when you are ready")
         }
         else{
