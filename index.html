@@ -1,0 +1,103 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acoustic Guitar</title>
+   
+
+    <style>
+        body{
+            background-color: rgb(168, 144, 147);
+            text-align: center;
+        }
+
+        h2{
+            color: navy;
+        }
+        img{
+            display: block;
+            margin: 20px auto;
+            border-radius: 2px;
+        }
+        
+    
+         button{
+        background-color: #596e79;
+        padding: 16px;
+        border-radius: 15px;
+        color: white;
+        margin: 10px;
+        border: 1px solid black;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 20px;
+        transition: all 200ms ease;
+        box-shadow: grey 200px;
+        
+
+    }
+    button:hover {
+        background-color: #c7b198
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+ 
+    
+   
+    </style>
+
+ </head>
+ <body>
+    <h1>Guitar</h1>
+    <h2>Have a good moment with an Acoustic guitar</h2>
+    <hr />
+    <img src="./guitar.png" width="300" alt="An image of an acoustic guitar">
+
+    <p>A guitar is one of the most used stringed instruments which is known for it's
+        versatility to a wide range of musical genres including classical, jazz, pop 
+        and others. On history, the first guitars known as <em>Vihuelas</em> were invented in Spain
+        around 15th Century. A typical guitar is made up of a body, fretboard and strings.
+        My favourite guitar to play is an <strong>acoustic</strong> guitar, which its oldest version was 
+        created by Christian Martin. I enjoy playing a guitar because it has a significant 
+        cultural influence around the world.An acoustic is my favourite because it produces
+        warm and natural tones through vibrationa that let melodies and harmonies to stand out.
+        With just a touch of strings, a tone of a guitar may evoke a variety of emotions and 
+        speak to different souls.
+   
+        <br />
+        Now that you have a little background on guitars let us begin your journey towards learning
+        basics in playing a guitar.
+    </p>
+   
+
+    <button>Start learning</button>
+    <hr />
+     <a href="http://127.0.0.1:5500/contact.html">Contact Me</a>
+
+     <script>
+        let messageDisplay = document.getElementById("messageDisplay")
+        function startBasics(){
+        let name = prompt ("What is your name?")
+        let userAnswer = prompt ("Are you intrested to learn basics in playing a guitar?")
+
+       
+
+        if (userAnswer == "Yes"){
+            alert ("Great "+name + " We are excited to help you learn")
+        } else if (userAnswer =="No"){
+            alert("No worries we will be there when you are ready")
+        }
+        else{
+            alert("Invalid answer, Please try again")
+        }
+    }
+
+        let button = document.querySelector("button");
+        button.addEventListener("click",startBasics)
+
+
+     </script>
+ </body>
+ </html>
